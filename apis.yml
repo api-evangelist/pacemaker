@@ -1,7 +1,12 @@
 aid: pacemaker
 name: PaceMaker
-description: PaceMaker is a company surfaced as a portfolio company of 500-global and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: PaceMaker is the consumer DJ application from Pacemaker Music AB, a Swedish startup and
+  500 Global portfolio company, that lets anyone mix and mash millions of tracks on iPhone and iPad.
+  It connects to streaming catalogs such as Spotify, includes an AI DJ that suggests matching tracks
+  and beat-matched transitions, and lets users crop and blend songs at phrase, bar, and beat precision
+  to record and share their own mixtapes. Pacemaker is a mobile end-user product; as of this pass it
+  publishes no public developer API, OpenAPI definition, SDK, MCP server, or developer portal, and its
+  domain (pacemaker.net) currently serves a WordPress marketing blog.
 url: https://raw.githubusercontent.com/api-evangelist/pacemaker/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,11 +14,30 @@ x-backed-by:
 - 500-global
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
+image: https://pacemaker.net/wp-content/uploads/2026/01/cropped-pacemaker.png
 tags:
 - Company
+- Music
+- DJ
+- Mobile App
+- Audio
+- Streaming
+- Entertainment
+- Consumer
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +45,14 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/pacemaker-domain-security.yml
 - type: Website
   url: https://pacemaker.net
+- type: Blog
+  url: https://pacemaker.net/category/blog/
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
